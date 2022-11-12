@@ -1025,7 +1025,7 @@ export default function Home({ blogs }) {
                   >
                     Check out my latest posts!
                   </h4>
-                  <div className="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10">
+                  <div className=" grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10">
                     {blogs.map((item) => {
                       return (
                         <Link key={item.slug.current} href={"/blog/" + item.slug.current} className="shadow">
@@ -1037,8 +1037,7 @@ export default function Home({ blogs }) {
                               ></span>
                               <span
                                 className="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-purple-700 bg-purple-600 text-red-100 px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-                              >Read More</span
-                              >
+                              >Read More</span>
                             </div>
                             <div className="bg-white py-6 px-5 xl:py-8">
                               <span className="block font-body text-lg font-semibold text-black">{item.title}</span>
@@ -1048,53 +1047,13 @@ export default function Home({ blogs }) {
                         </Link>
                       )
                     })}
-
-                    {/* <a href="/post" className="shadow">
-                      <div
-                        style={{ backgroundImage: `url(/assets/img/post-02.png)` }}
-                        className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
-                      >
-                        <span
-                          className="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
-                        ></span>
-                        <span
-                          className="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-                        >Read More</span
-                        >
-                      </div>
-                      <div className="bg-white py-6 px-5 xl:py-8">
-                        <span className="block font-body text-lg font-semibold text-black"
-                        >My personal productivity system</span
-                        >
-                        <span className="block pt-2 font-body text-grey-20"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-                        >
-                      </div>
-                    </a>
-                    <a href="/post" className="shadow">
-                      <div
-                        style={{ backgroundImage: `url(/assets/img/post-03.png)` }}
-                        className="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
-                      >
-                        <span
-                          className="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
-                        ></span>
-                        <span
-                          className="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-                        >Read More</span
-                        >
-                      </div>
-                      <div className="bg-white py-6 px-5 xl:py-8">
-                        <span className="block font-body text-lg font-semibold text-black"
-                        >My year in review 2020</span
-                        >
-                        <span className="block pt-2 font-body text-grey-20"
-                        >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                          eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-                        >
-                      </div>
-                    </a> */}
+                  </div>
+                  <div className="flex justify-center flex-col items-center mt-7">
+                    <Link href="/blogs">
+                      <span
+                        className="rounded-full border-2 border-purple-700 bg-purple-600 text-red-100 px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
+                      >View More</span>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Navbar = () => {
     return (
         <div>
             <div className="w-full z-50 top-0 px-12 py-4  absolute bg-purple-500">
-                <div className="container flex items-center justify-center">
+                <div className="container flex items-center justify-between">
                     <div className="hidden lg:block">
                         <ul className="flex items-center">
 
@@ -75,9 +76,9 @@ const Navbar = () => {
                                     className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
                                 ></span>
                             </li >
-
                         </ul >
                     </div >
+                    <Link href="/" className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white">Go Back</Link>
                     <div className="block lg:hidden">
                         <button >
                             <i className="bx bx-menu text-4xl text-white"></i>
